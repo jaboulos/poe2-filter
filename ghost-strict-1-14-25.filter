@@ -377,7 +377,7 @@ WaystoneTier = 14
 SetFontSize 35
 SetTextColor 145 170 200
 SetBorderColor 20 240 240
-PlayAlertSound 2 300
+## PlayAlertSound 2 300
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 
