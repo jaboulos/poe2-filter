@@ -98,9 +98,9 @@ SetFontSize 38
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 1 White Circle
+## PlayAlertSound 2 300
+## PlayEffect White
+## MinimapIcon 1 White Circle
 
 Hide
 Class "Currency"
