@@ -33,7 +33,7 @@ SetFontSize 35
 ## Divine Orb Style
 Show
 Class "Currency"
-BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb"
+BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -42,11 +42,22 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
+Show
+Class "Currency"
+BaseType "Greater Jeweller's Orb"
+SetFontSize 40
+SetTextColor 255 0 0 255
+SetBorderColor 255 165 0 255
+SetBackgroundColor 245 245 245 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
 #--------------------------
 # Leagues
 #--------------------------
 
-Show
+Hide
 Class "Currency"
 BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
 SetFontSize 38
@@ -70,7 +81,7 @@ MinimapIcon 1 White Circle
 
 Show
 Class "Currency"
-BaseType "Distilled" "Essence of" "Omen of"
+BaseType "Distilled" "Omen of"
 SetFontSize 38
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -80,7 +91,7 @@ PlayEffect White
 MinimapIcon 1 White Circle
 
 
-Show
+Hide
 Class "Currency"
 BaseType "Neural Catalyst" "Chayula's Catalyst" "Adaptive Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst"
 SetFontSize 38
@@ -362,9 +373,20 @@ MinimapIcon 1 Cyan Triangle
 Show
 BaseType "Waystone"
 Rarity <= Rare
-WaystoneTier >= 14
+WaystoneTier = 14
+SetFontSize 35
+SetTextColor 145 170 200
+SetBorderColor 20 240 240
+PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+Show
+BaseType "Waystone"
+Rarity <= Rare
+WaystoneTier = 15
 SetFontSize 40
-SetTextColor 20 240 240
+SetTextColor 125 255 255
 SetBorderColor 20 240 240
 PlayAlertSound 2 300
 PlayEffect Cyan
@@ -409,7 +431,7 @@ BaseType "Stellar Amulet" "Sapphire Ring" "Breach Ring"
 SetFontSize 35
 SetTextColor 0 0 0
 SetBorderColor 0 0 0
-SetBackgroundColor 190 144 135
+SetBackgroundColor 173 216 230
 MinimapIcon 2 Pink Circle
 
 Show
@@ -419,7 +441,7 @@ ItemLevel >= 81
 SetFontSize 35
 SetTextColor 0 0 0
 SetBorderColor 0 0 0
-SetBackgroundColor 125 230 232
+SetBackgroundColor 173 216 230
 MinimapIcon 2 Pink Circle
 
 
