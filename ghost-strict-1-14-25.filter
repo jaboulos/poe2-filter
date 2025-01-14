@@ -57,7 +57,7 @@ MinimapIcon 0 Red Star
 # Leagues
 #--------------------------
 
-Hide
+Show
 Class "Currency"
 BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
 SetFontSize 38
@@ -244,7 +244,7 @@ SetFontSize 45
 
 Show
 Class "Currency"
-BaseType "Distilled" "Essence of" "Omen of"
+BaseType "Distilled" "Omen of"
 SetFontSize 45
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
