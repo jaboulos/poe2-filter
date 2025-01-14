@@ -90,6 +90,10 @@ PlayAlertSound 2 300
 PlayEffect White
 MinimapIcon 1 White Circle
 
+Hide
+Class "Currency"
+BaseType "Essence of"
+
 
 Hide
 Class "Currency"
