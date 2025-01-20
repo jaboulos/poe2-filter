@@ -1,6 +1,6 @@
 Show
 Rarity Unique
-BaseType "Heavy Belt" "Grand Regalia" "Armoured Cap" "Furtive Wraps" "Utility Belt" "Ornate Belt" "Smuggler Coat" "Flask"
+BaseType "Heavy Belt" "Grand Regalia" "Armoured Cap" "Furtive Wraps" "Utility Belt" "Ornate Belt" "Smuggler Coat" "Flask" "Stellar Amulet" "Time-Lost Diamond" "Timeless Jewel"
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 255 255 255 255
@@ -22,9 +22,9 @@ SetFontSize 45
 
 Show
 Rarity Unique
-SetTextColor 175 96 37 255
-SetBorderColor 175 96 37 255
-SetBackgroundColor 53 13 13 255
+SetTextColor 50 50 50 255
+SetBorderColor 195 130 80 255
+SetBackgroundColor 195 130 80 255
 PlayAlertSound 3 300
 PlayEffect Brown
 MinimapIcon 2 Brown Star
@@ -272,9 +272,9 @@ Class "Currency"
 BaseType "Simulacrum Splinter" " Artifact"
 StackSize >= 1
 SetFontSize 40
-SetTextColor 255 255 255 255
-SetBorderColor 255 255 255 255
-SetBackgroundColor 180 15 200
+SetTextColor 120 45 165 255
+SetBorderColor 160 160 160 255
+SetBackgroundColor 160 160 160
 MinimapIcon 2 Grey Circle
 
 Show
@@ -290,18 +290,22 @@ SetFontSize 40
 Show
 Class "Currency"
 BaseType "Breach Splinter"
-StackSize >= 1
+StackSize > 1
 SetFontSize 38
-SetTextColor 255 255 255 255
-SetBorderColor 255 255 255 255
-SetBackgroundColor 180 15 200
+SetTextColor 50 50 50 255
+SetBorderColor 167 81 218
+SetBackgroundColor 167 81 218
 MinimapIcon 2 Grey Circle
 
-Hide
+Show
 Class "Currency"
 BaseType "Breach Splinter"
 StackSize = 1
-AreaLevel >= 65
+SetFontSize 38
+SetTextColor 165 80 220 255
+SetBorderColor 90 50 125
+SetBackgroundColor 60 20 90
+MinimapIcon 2 Grey Circle
 
 Show
 Class "Currency"
@@ -369,9 +373,6 @@ Rarity <= Normal
 SetFontSize 35
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
 
 
 Show
