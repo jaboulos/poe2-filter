@@ -455,15 +455,6 @@ SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
-Hide # $type->hidelayer $tier->raresendgame
-	Rarity Rare
-	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-	AreaLevel >= 65
-	SetFontSize 18
-	SetBorderColor 0 0 0 0
-	SetBackgroundColor 20 20 0 0
-	DisableDropSound True
-
 #--------------------------
 # Rings, Amulets, Belts
 #--------------------------
