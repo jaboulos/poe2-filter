@@ -22,9 +22,9 @@ SetFontSize 45
 
 Show
 Rarity Unique
-SetTextColor 50 50 50 255
-SetBorderColor 195 130 80 255
-SetBackgroundColor 195 130 80 255
+SetTextColor 235 235 215 255
+SetBorderColor 215 170 75 255
+SetBackgroundColor 215 170 75 255
 PlayAlertSound 3 300
 PlayEffect Brown
 MinimapIcon 2 Brown Star
@@ -200,6 +200,15 @@ SetFontSize 40
 MinimapIcon 2 Blue Triangle
 PlayEffect Blue
 
+Hide
+Rarity Normal Magic
+Class "Jewel"
+BaseType == "Emerald" "Ruby" "Sapphire"
+# SetFontSize 42
+# SetTextColor 0 70 255 255
+# SetBorderColor 0 70 255 255
+# SetBackgroundColor 30 0 70 255
+
 
 # Special B Tier - Any Runes and Charms
 Hide
@@ -260,12 +269,20 @@ MinimapIcon 1 White Circle
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType  "Armourer's Scrap" "Chance Shard" "Vaal Orb" "Orb of Alchemy" "Regal Orb"
+BaseType  "Armourer's Scrap" "Chance Shard" "Vaal Orb"
 SetTextColor 0 0 0
 SetBorderColor 0 0 0
 SetBackgroundColor 210 178 135
 SetFontSize 40
 MinimapIcon 2 Grey Circle
+
+Hide
+Class "Currency"
+"Orb of Alchemy" "Regal Orb"
+SetTextColor 0 0 0
+SetBorderColor 0 0 0
+SetBackgroundColor 210 178 135
+SetFontSize 40
 
 Show
 Class "Currency"
@@ -273,8 +290,8 @@ BaseType "Simulacrum Splinter" " Artifact"
 StackSize >= 1
 SetFontSize 40
 SetTextColor 120 45 165 255
-SetBorderColor 160 160 160 255
-SetBackgroundColor 160 160 160
+SetBorderColor 230 230 230 255
+SetBackgroundColor 230  230 230
 MinimapIcon 2 Grey Circle
 
 Show
@@ -322,14 +339,14 @@ Class "Currency"
 BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation" "Lesser Jeweller's Orb" "Arcanist's Etcher" "Blacksmith's Whetstone" "Artificer's Orb"
 AreaLevel >= 65
 
-Show
-Class "Currency"
-BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation" "Lesser Jeweller's Orb"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetFontSize 38
-MinimapIcon 2 Grey Circle
-AreaLevel < 65
+# Show
+# Class "Currency"
+# BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation" "Lesser Jeweller's Orb"
+# SetTextColor 255 207 132
+# SetBorderColor 255 207 132
+# SetFontSize 38
+# MinimapIcon 2 Grey Circle
+# AreaLevel < 65
 
 
 # Unknown currency
@@ -375,7 +392,7 @@ SetTextColor 20 240 240
 SetBorderColor 20 240 240
 
 
-Show
+Hide
 BaseType "Waystone"
 Rarity <= Rare
 WaystoneTier = 14
@@ -390,6 +407,17 @@ Show
 BaseType "Waystone"
 Rarity <= Rare
 WaystoneTier = 15
+SetFontSize 40
+SetTextColor 125 255 255
+SetBorderColor 20 240 240
+PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+Show
+BaseType "Waystone"
+Rarity <= Rare
+WaystoneTier = 16
 SetFontSize 40
 SetTextColor 125 255 255
 SetBorderColor 20 240 240
@@ -417,6 +445,7 @@ SetFontSize 40
 # Value Rares
 #--------------------------
 
+# Show rings and ammys, check conditional for item level later
 Show
 Class "Rings" "Amulets"
 Rarity Rare
@@ -425,6 +454,15 @@ SetTextColor 233 206 75
 SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
+
+Hide # $type->hidelayer $tier->raresendgame
+	Rarity Rare
+	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+	AreaLevel >= 65
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 20 20 0 0
+	DisableDropSound True
 
 #--------------------------
 # Rings, Amulets, Belts
@@ -457,19 +495,14 @@ MinimapIcon 2 Pink Circle
 #--------------------------
 
 
-Hide
-Quality > 10
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
-AreaLevel >= 65
-
-Hide
-Quality > 10
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
-AreaLevel >= 65
+Hide # $type->hidelayer $tier->normalmagicendgame
+	Rarity Normal Magic
+	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Charms" "Crossbows" "Foci" "Gloves" "Helmets" "Life Flasks" "Mana Flasks" "One Hand Maces" "Quarterstaves" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+	AreaLevel >= 65
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 20 20 0 0
+	DisableDropSound True
 
 #--------------------------
 # OPTIONAL RULES
