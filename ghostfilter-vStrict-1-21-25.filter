@@ -278,7 +278,7 @@ MinimapIcon 2 Grey Circle
 
 Hide
 Class "Currency"
-"Orb of Alchemy" "Regal Orb"
+BaseType "Orb of Alchemy" "Regal Orb"
 SetTextColor 0 0 0
 SetBorderColor 0 0 0
 SetBackgroundColor 210 178 135
