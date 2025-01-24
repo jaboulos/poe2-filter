@@ -2182,8 +2182,9 @@ Show # $type->currency $tier->c
 Class == "Stackable Currency"
 BaseType == "Exalted Orb" "Gemcutter's Prism"
 SetFontSize 45
-SetBorderColor 245 139 87 255
-SetTextColor 245 139 87 255
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 240 90 35
 PlayAlertSound 2 300
 MinimapIcon 1 Yellow Circle
 PlayEffect White
@@ -2601,8 +2602,9 @@ Show # $type->currency->splinter $tier->t4
 	Class == "Stackable Currency"
 	BaseType == "Breach Splinter" "Simulacrum Splinter"
 	SetFontSize 40
-	SetTextColor 200 75 200 255
-	SetBorderColor 200 75 200 255
+	SetTextColor 50 50 50 255
+	SetBorderColor 167 81 218
+	SetBackgroundColor 167 81 218
 	PlayAlertSound 2 300
 	PlayEffect Purple Temp
 	MinimapIcon 1 Yellow Kite
