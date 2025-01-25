@@ -1959,7 +1959,7 @@ Show # $type->waystones $tier->deco_wsup_t15
 #	SetBorderColor 200 200 200 255
 #	Continue
 
-#Show  # # # $type->waystones $tier->decomap4overleveled
+# Show  # # # $type->waystones $tier->decomap4overleveled
 #	WaystoneTier >= 1
 #	WaystoneTier <= 3
 #	Class == "Waystones"
@@ -1970,10 +1970,18 @@ Show # $type->waystones $tier->deco_wsup_t15
 
 # semi-strict, currently: t14 map, find: t1 map, shown based on t1
 
-Show # $type->waystones $tier->deco_corruptedmod
+ Show # $type->waystones $tier->deco_corruptedmod
+ 	WaystoneTier >= 15
 	AnyEnchantment True
 	Class == "Waystones"
 	SetBorderColor 250 0 0 255
+	Continue
+
+Hide # $type->waystones $tier->decomap1
+	WaystoneTier <= 14
+	Class == "Waystones"
+	SetFontSize 45
+	SetBorderColor 255 255 255 255
 	Continue
 
 #------------------------------------
@@ -1981,12 +1989,14 @@ Show # $type->waystones $tier->deco_corruptedmod
 #------------------------------------
 
 Show # $type->waystones $tier->enchanted
+	WaystoneTier >= 15
 	AnyEnchantment True
 	Class == "Waystones"
 	SetBorderColor 250 0 0 255
 
 Show # $type->waystones $tier->corrupted8
 	Corrupted True
+	WaystoneTier >= 15
 	Class == "Waystones"
 	HasExplicitMod >=7 "a" "o" "e" "u" "i" "y"
 	SetBorderColor 250 0 0 255
@@ -2096,6 +2106,7 @@ Hide # %HS2 $type->waystones $tier->waystone_t1
 	SetTextColor 255 255 255 255
 
 Show # $type->waystones $tier->restex
+	WaystoneTier >= 15
 	Class == "Waystones"
 	SetFontSize 45
 	SetTextColor 0 255 255 255
