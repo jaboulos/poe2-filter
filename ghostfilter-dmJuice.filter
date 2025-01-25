@@ -1834,103 +1834,103 @@ Show # $type->waystones $tier->deco_wsup_t15
 	SetBorderColor 220 50 0 255
 	Continue
 
-Show # $type->waystones $tier->deco_wsup_t14
-	WaystoneTier >= 14
-	Class == "Waystones"
-	AreaLevel < 78
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t14
+#	WaystoneTier >= 14
+#	Class == "Waystones"
+#	AreaLevel < 78
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t13
-	WaystoneTier >= 13
-	Class == "Waystones"
-	AreaLevel < 76
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t13
+#	WaystoneTier >= 13
+#	Class == "Waystones"
+#	AreaLevel < 76
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t12
-	WaystoneTier >= 12
-	Class == "Waystones"
-	AreaLevel < 75
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t12
+#	WaystoneTier >= 12
+#	Class == "Waystones"
+#	AreaLevel < 75
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t11
-	WaystoneTier >= 11
-	Class == "Waystones"
-	AreaLevel < 74
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t11
+#	WaystoneTier >= 11
+#	Class == "Waystones"
+#	AreaLevel < 74
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t10
-	WaystoneTier >= 10
-	Class == "Waystones"
-	AreaLevel < 73
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t10
+#	WaystoneTier >= 10
+#	Class == "Waystones"
+#	AreaLevel < 73
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t9
-	WaystoneTier >= 9
-	Class == "Waystones"
-	AreaLevel < 72
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t9
+#	WaystoneTier >= 9
+#	Class == "Waystones"
+#	AreaLevel < 72
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t8
-	WaystoneTier >= 8
-	Class == "Waystones"
-	AreaLevel < 72
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t8
+#	WaystoneTier >= 8
+#	Class == "Waystones"
+#	AreaLevel < 72
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t7
-	WaystoneTier >= 7
-	Class == "Waystones"
-	AreaLevel < 71
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t7
+#	WaystoneTier >= 7
+#	Class == "Waystones"
+#	AreaLevel < 71
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t6
-	WaystoneTier >= 6
-	Class == "Waystones"
-	AreaLevel < 70
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t6
+#	WaystoneTier >= 6
+#	Class == "Waystones"
+#	AreaLevel < 70
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t5
-	WaystoneTier >= 5
-	Class == "Waystones"
-	AreaLevel < 69
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t5
+#	WaystoneTier >= 5
+#	Class == "Waystones"
+#	AreaLevel < 69
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t4
-	WaystoneTier >= 4
-	Class == "Waystones"
-	AreaLevel < 68
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t4
+#	WaystoneTier >= 4
+#	Class == "Waystones"
+#	AreaLevel < 68
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t3
-	WaystoneTier >= 3
-	Class == "Waystones"
-	AreaLevel < 67
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t3
+#	WaystoneTier >= 3
+#	Class == "Waystones"
+#	AreaLevel < 67
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t2
-	WaystoneTier >= 2
-	Class == "Waystones"
-	AreaLevel < 66
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t2
+#	WaystoneTier >= 2
+#	Class == "Waystones"
+#	AreaLevel < 66
+#	SetBorderColor 220 50 0 255
+#	Continue
 
-Show # $type->waystones $tier->deco_wsup_t1
-	WaystoneTier >= 1
-	Class == "Waystones"
-	AreaLevel < 65
-	SetBorderColor 220 50 0 255
-	Continue
+# Show # $type->waystones $tier->deco_wsup_t1
+#	WaystoneTier >= 1
+#	Class == "Waystones"
+#	AreaLevel < 65
+#	SetBorderColor 220 50 0 255
+#	Continue
 
 #Show  # # # $type->waystones $tier->decomap1overleveled
 #	WaystoneTier >= 1
